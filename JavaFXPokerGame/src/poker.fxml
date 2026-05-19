@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10"
+      alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="PokerController"
+      style="-fx-padding: 20;">
+
+    <Label text="Poker Game"
+           style="-fx-font-size: 24; -fx-font-weight: bold;" />
+
+    <HBox spacing="20">
+
+        <VBox>
+            <Label text="Player Cards" />
+
+            <TextArea fx:id="playerArea"
+                      prefWidth="250"
+                      prefHeight="200"
+                      editable="false" />
+        </VBox>
+
+        <VBox>
+            <Label text="Computer Cards" />
+
+            <TextArea fx:id="computerArea"
+                      prefWidth="250"
+                      prefHeight="200"
+                      editable="false" />
+        </VBox>
+
+    </HBox>
+
+    <Button fx:id="dealButton"
+            text="Deal Cards"
+            onAction="#dealCards"
+            prefWidth="150" />
+
+    <Label fx:id="resultLabel"
+           text="Press Deal Cards"
+           style="-fx-font-size: 18; -fx-font-weight: bold;" />
+
+</VBox>
